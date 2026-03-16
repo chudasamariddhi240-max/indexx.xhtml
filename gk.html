@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <script>
+        document.addEventListener("keydown",function(event) {
+            let taskList = document.getElementById("taskList");
+            let keyDisplay = document.getElementById("keyDisplay");
+
+             switch (event.key.toLowerCase()) {
+                case "a" :
+                    let task = prompt("Enter a new task:");
+                    if (task) {
+                        let li = document.createElement("li");
+                        li.innerText = task;
+                        taskList.appendChild(li);
+                    }
+             }
+              keyDisplay.innerText = "Task Added!";
+              
+
+              case "d" :
+                if (taskList.lastChild) {
+                    taskList.removeChild(taskList.lastChild);
+                    keyDisplay.innerText = "Last Task Deletad!";
+
+                } else {
+                    keyDisplay.innerText = "No Tasks to Delete!";
+                }
+                break;
+
+                case "c":
+                    taskList.innerHTML = "";
+                    keyDisplay.innerText = "All Tasks Cleared!";
+                    break;
+
+                    default:
+                        keyDisplay.innerText = `Invlid Key: ${event.key}`;
+                        return;
+            }       
+        }) ;
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        var op = document.getElementById("op");
+        var si
+        function vs() {
+            function inner() {
+                op.innerHTML += "VEER SIR<br>";
+            }
+            si = setInterval(inner, 1000)
+        }
+         function sv() {
+            clearInterval(si)
+            op.innerHTML = "Set Interval Stopped.."
+            op.style.color = "red"
+         }
+    </script>
+</body>
+</html>

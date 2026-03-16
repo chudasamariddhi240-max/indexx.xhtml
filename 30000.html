@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<hea      ]   
+    <title>Document</title>
+</head>
+<body>;                
+     <h1>🌎 Browser  informatino checker</h1>
+     <div class="info-box">
+
+        <p><span>Browser platform:</span> <span id="platform"></span></p>
+        <p><span>User Agent:</span> <span id="UserAgent"></span></p>
+        <p><span>Browser Engine:</span> <span id="engine"></span></p>
+        <p><span>Application Code Name:</span> <span id="applicationCodeName"></span></p>
+        <p><span>Application Name:</span> <span id="appName"></span></p>
+        <p><span>Is Online:</span> <span id="online status"></span></p>
+        <p><span>browser Language:</span> <span id="platform"></span></p>
+        <p><span>Cookies Enabled:</span> <span id="cookies"></span></p>
+     </div>
+
+     <script>
+        function checkBrowserInfo() {
+            document.getElementById("platform").innerText = navigator.platform;
+            document.getElementById("platform").innerText = navigator.platform;
+            document.getElementById("userAgent").innerText = navigator.userAgent;
+            document.getElementById("engine").innerText = navigator.product;
+            document.getElementById("appcodeName").innerText = navigator.appCodeName;
+            document.getElementById("appName").innerText = navigator.appName;
+            document.getElementById("onlineStatus").innerText = navigator.onLine ? "Yes ✅" : "No ❌";
+            document.getElementById("language").innerText = navigator.language;
+            document.getElementById("cookies").innerText = navigator.cookieEnabled ? "Enabled 🫡" : "Disabled ❌";
+
+        checkBrowserInfo();
+        </script>
+        
+</body>
+</html>

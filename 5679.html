@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript addEventListener Practice</h2>
+    <button id="changeColorBtn">Change Background Color</button>
+    <div id="colorBox">Color Box</div>
+
+    <input type="text" id="textInput" placeholder="Type something..">
+    <p id="displayText">You typed: </p>
+
+    <script>
+       // button click event
+       document.getElementById("changeColorBtn").addEventListener("click", function() {
+           const colors =["red", "blue", "green", "yellow", "purple", "orange"];
+           const randomColor = colors[Math.floor(Math.random() * colors.length)];
+           document.getElementById("colorBox").style.backgroundColor = randomColor;
+       });
+
+       // Input field event
+
+       document.getElementById("textInput").addEventListener("input", function() {
+          document.getElementById("displayText").innerText = "You typed: " + this.value;
+       });
+    </script>
+</body>
+</html>

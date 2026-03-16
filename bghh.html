@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vs</title>
+    </head>
+    <body>
+        <input type="text" name="" id="inp">
+
+        <select name="" id="sp">
+            <option value=" ">Space</option>
+
+            <option value=",">Coma</option>
+
+            <option value=".">dot(.)</option>
+        </select>
+
+        <button onclick="vs()">click me</button>
+
+        <div id="op"></div>
+
+        <script>
+            function vs() {
+                var inp = document.getElementById("inp").value;
+
+                var sp = document.getElementById("sp").value;
+
+                var op = document.getElementById("op");
+
+
+                 var nt = inp.split(sp);
+                 var nn = nt.join("<br>");
+
+                 op.innerHTML = nn;
+            }
+        </script>
+    </body>
+</html>

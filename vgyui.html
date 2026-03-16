@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vs</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                font-family: sans-serif;
+                transition: .5s;
+            }
+
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            .card{
+                height: 300px;
+                width: 200px;
+                background-color: black;
+                position: absolute;
+                overflow: hidden;
+            }
+            img{
+                height: 300px;
+                width: 100%;
+                position: relative;
+            }
+            .img1{
+                 height: 300px;
+                 width: 200px;
+                 background-color: black;
+            }
+            .con{
+                text-align: center;
+                margin-top: -30px;
+                position: relative;
+            }
+            .card:hover .con{
+                margin-top: -200px;
+            }
+            .card:hover .img1{
+                opacity: 0.7;
+            }
+            button{
+                height: 30px;
+                width: 100px;
+                background-color: darkcyan;
+                color: aliceblue;
+                border: none;
+                border-radius: 5px 5px 5px;
+            }
+            button:hover{
+                background-color: rgb(7, 42, 7);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1vdW50YWlufGVufDB8fDB8fHww"
+        </div>
+        <div class="con">
+            <h2>mountain view</h2>
+            <div class="hide">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi tenetur odio voluptatibus id fugiat. Placeat, esse deleniti. Repellat explicabo laborum velit magni dolor ab debitis numquam in enim illum. Veritatis.
+
+                </p>
+                <button>VISIT</button>
+            </div>
+        </div>
+    </body>
+</html>

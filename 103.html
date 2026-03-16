@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vs</title>
+    </head>
+    <body>
+
+        <button onclick="openp()">open</button>
+
+        <button onclick="closep()">close</button>
+        <script>
+            let popup;
+            function openp() {
+
+                popup = window.open("","veer", "width=20,height=300,left=300,top=50")
+
+                popup.document.write("<h2 style='color:red'>this Is popup</h2>")
+            }
+            function closep() {
+                popup = popup.close()
+            }
+        </script>
+    </body>
+</html>

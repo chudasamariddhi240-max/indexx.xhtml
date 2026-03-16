@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Press 1, 2, or 3 to Change Emoji</h2>
+    <div id="emoji">😊</div>
+    <p id="keyDisplay">Press a key...</p>
+
+    <script>
+        document.addEventListener("keydown",function(event) {
+            let emoji;
+            switch (event.key) {
+                case "1":
+                    emoji = "😊";
+                    break;
+                case "2":
+                    emoji = "😢";
+                    break;
+                case "3":
+                    emoji = "😡";
+                    break;
+                    default:
+                        document.getElementById("keyDisplay").innerText = `Invalid Key: ${event.key}`;
+                        return;
+            }
+            document.getElementById("emoji").innerText = emoji;
+            document.getElementById("keyDisplay").innerText = `You pressed: ${event.key}`;
+        });
+    </script>
+</body>
+</html>

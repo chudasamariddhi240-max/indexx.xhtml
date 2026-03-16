@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vs</title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                font-family: sans-serif;
+                transition: 5s;
+            }
+
+            button{
+                padding: 15px;
+                
+                background-color: darkkhaki;
+                font-weight: bolder;
+                font-size: 50px;
+                cursor: pointer;
+                border: none;
+                border-radius: 20px;
+            }
+
+            body{
+                display: flex;
+                justify-content:center;
+                align-items: center;
+                min-height: 100vh;background-color: darkcyan;
+                
+            }
+            #modal{
+                width: 20%;
+                font-size: 25px;
+                height: 40%;
+                display: none;
+                background-color: lightgreen;
+                position: absolute;
+                padding: 15px;
+            }
+
+            #close{
+                cursor: pointer;
+                color: red;
+                float: right;
+            }
+
+            #close:hover{
+                scale: 1.2;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <button onclick="vs()">click me</button>
+        <div id="modal">
+            <h3 id="close"onclick="sv()">>&times;</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quia repellat maxime maiores nulla mollitia culpa laboriosam sit possimus obcaecati aut eius deserunt iure, ab temporibus autem corporis? Dicta, porro?
+
+            </p>
+        </div>
+
+        <script>
+
+            
+            function vs(){
+                var modal=document.getElementById("modal");
+
+             modal.style.display="block";
+
+            }
+            function sv(){
+                var modal =document.getElementById("modal");
+
+                modal.style.display="none";
+            }
+        </script>
+    </body>
+</html>

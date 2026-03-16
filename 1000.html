@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <style>
+        body{
+            width: 6000px;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1{
+            font-size: 200px;
+        }
+    </style>
+    <body onscroll="ph()">
+        <h1 id="hh">veer computer classes 👈</h1>
+
+        <script>
+            function ph() {
+                var dc = Window.scrollX;
+
+                var hh = document.getElementById("hh");
+
+                if(dc > 900) {
+                    document.body.style.backgroundColor = "coral";
+
+                    hh.style.color="blue"
+                }
+                else if(dc > 400){
+                    document.body.style.backgroundColor = "cyan";
+
+                    hh.style.color="black"
+                }
+
+                else if(dc > 200) {
+                    document.body.style.backgroundColor ="yellow";
+
+                    hh.style.color="white"
+                }
+
+                else{
+                    document.body.style.backgroundColor = "red";
+
+                    hh.style="yellow"
+                }
+            }
+        </script>
+    </body>
+</html>
+
+
+,
+
+
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vs</title>
+        <body>
+
+            <div id="op"></div>
+
+            <button onclick="vs()">click me</button>
+
+            <script>
+                function vs(){
+                    var op = document.getElementById("op");
+
+                    var r = Math.random();
+
+                    if(r < .5){
+                        op.innerHTML= "Head";
+                    }
+
+                    else{
+                        op.innerHTML= "Tail";
+                    }
+                }
+            </script>
+        </body>
+    </head>
+</html>

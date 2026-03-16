@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        document.addEventListener("keydown",function(event){
+            let color;
+            switch (event.key) {
+                case "r":
+                case "R" :  
+                    color = "red" ;
+                    break;
+                case "g":
+                case "G" :  
+                    color = "green" ;
+                    break;
+                case "b":
+                case "B" :  
+                    color = "blue" ;
+                    break;
+                    default:
+                        document.getElementById("keyDisplay").innerText = `Invalid Key": ${event.key}`;
+                        return;
+            }
+
+            document.body.style.backgroundColor = color;
+            document.getElementById("keyDisplay").innerText = `Background Changed to: ${color}`;
+        });
+     </script>
+</body>
+</html>

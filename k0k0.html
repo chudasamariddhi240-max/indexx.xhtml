@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vs</title>
+        <body>
+            <input type="text" placeholder="kai bi rite lakho.." id="inp" onkeyup="vs()">
+
+            <div id="op"></div>
+
+             <button onclick="vs()">CLICK ME FOR THE UPPERCASE</button>
+
+             <script>
+                function vs(){
+                    var inp = document.getElementById("inp");
+
+                    inp.value = inp.value.toUpperCase();
+                }
+                vs();
+             </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vs</title>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                margin: 5px;
+                font-size: 50px;
+                font-family: sans-serif;
+                font-weight: bolder;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+            }
+        </style>
+    </head>
+     <body>
+         <input type="color" name="" id="inp">
+
+         <input type="text" id="user">
+
+         <div id="op"></div>
+
+         <button onclick="vs()">click me</button>
+         <script>
+            function vs() {
+                var colorpicker = document.getElementById("inp").value;
+                var user = document.getElementById("user").value;
+                var op = document.getElementById("op");
+
+                op.style.display ="flex";
+                op.style.flexDirection = "row";
+
+                var newbox = document.createElement("div")
+
+                newbox.classList.add("box")
+
+                newbox.style.background = colorpicker
+
+                op.appendChild(newbox)
+            } 
+         </script>
+     </body>
+</html>

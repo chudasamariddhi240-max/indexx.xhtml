@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>document</title>
+    </head>
+    <body>
+        <input type="text" name="" id="cr" >
+
+        <input type="number" name="" id="sr" >
+
+    <button onclick="vs()">click me</button>
+
+    <div id="op"></div>
+
+    <script>
+        function vs(){
+            var cr = document.getElementById("cr").value;
+
+            var sr = document.getElementById("sr").value;
+
+            var op = document.getElementById("op");
+
+            var y = cr.repeat(sr);
+
+            op.innerHTML= y;
+    </script>
+    </body>
+</html>

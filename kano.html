@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vs</title>
+    </head>
+    <body>
+        <h1>Dark mode toggle</h1>
+        <button id="toggleBtn" class="light-mode-btn" onclick="toggleDarkMode()">Enble Dark Mode</button>
+
+        <script>
+             function toggleDarkMode(){
+                  var body = document.body;
+                  var button = document.getElementById("toggleBtn");
+
+                  if (body.classList.contains("dark-mode")){
+                      body.classList.remove("dark-mode");
+                      button.textContent = "Enable Dark mode";
+                      button.classList.remove("dark-mode-btn");
+                      button.classList.add("light-mode-btn");
+                  } else {
+                    body.classList.add("dark-mode");
+                    button.textContent = "Disable Dark mode";
+                    button.classList.remove("light-mode-btn");
+                    button.classList.add("dark-mode-btn");
+                  }
+             }
+        </script>
+    </body>
+</html>

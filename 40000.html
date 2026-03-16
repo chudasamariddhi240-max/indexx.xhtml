@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+     <div id="container">
+          <div id="box"></div>
+     </div>
+
+     <button onclick="vs()">Click me</button>
+
+     <script>
+        function vs() {
+            var box = document.getElementById("box");
+
+            var p = 0;
+
+            var s = setInterval(move, 10)
+
+            function move() {
+                if (p >= 350) {
+                    clearInterval(s)
+                }
+                p++;
+                box.style.left = p + "px"
+            }
+        }
+     </script>
+</body>
+</html>

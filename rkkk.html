@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>document</title>
+    <body>
+      
+    </body>
+    <div id="op"></div>
+
+        <button onclick="vs()">click me</button>
+      
+        <script>
+            function vs() {
+              var inp = document.getElementById('inp').value;
+              var ut = document.getElementById("usertype").value;
+              var dis = ut === "vip" ? 20 :
+                ut === "student" ? 15 : 5;
+               var fdis = dis * inp / 100
+               console.log('final Amount ${inp - fdis}') ;
+            }
+        </script>
+  </head>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" name="" id="ok">
+
+        <input type="text" name="" id="ok2">
+
+        <input type="text" name="" id="ok3">
+
+        <div id="op"></div>
+
+        <button onclick="sr">click me</button>
+
+        <script>
+            function sr() {
+                var ok = document.getElementById("ok").value;
+
+                var ok2 = document.getElementById("ok2").value;
+
+                var ok3 = document.getElementById("ok3").value;
+
+                var op = document.getElementById("op");
+
+                var r = ok.replsceAll(ok2,ok3);
+
+                op.innerText=r;
+            }
+        </script>
+    </body>
+</html>

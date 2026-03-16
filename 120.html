@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>document</title>
+    </head>
+    <body>
+
+        <input type="text" name="" id="inp">
+
+        <div id="op"></div>
+
+        <button onclick="vs()">click me</button>
+
+        <button onclick="gofor()">go forward</button>
+
+        <script>
+            function vs() {
+                var inp = document.getElementById("inp").value;
+
+                var op = document.getElementById("op");
+
+                //op.innerHTML = window.location.protocol
+
+                var newurl = window.location.assign(inp)
+            }
+            function gofor() {
+                Window.hisstory.forward()
+            }
+        </script>
+    </body>
+</html>

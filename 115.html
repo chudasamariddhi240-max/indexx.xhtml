@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>vs</title>
+    </head>
+    <body>
+        <button onclick="vs()">click me</button>
+
+        <div id="op"></div>
+
+        <input type="text" id="inp">
+
+        <button onclick="ddl()">go to website</button>
+
+        <script>
+            function vs() {
+                var inp = document.getElementById("inp").value;
+
+                var op = document.getElementById("op");
+
+                var href = window.location.href;
+ 
+                var hostname = Window.location.hostname;
+                var pathname = Window.location pathname;
+                var protocoll = Window.location.protocoll;
+
+                op.innerHTML = `href:${href} <br> pathname :${pathname} <br> protocoll ${protocoll}`;
+            }
+            function ddi () {
+                var inp = document.getElementById("inp").value;
+                var new = window.location.assign(inp);
+            }
+        </script>
+    </body>
+</html>

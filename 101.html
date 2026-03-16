@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VS</title>
+    </head>
+    <body onresize="vs()">
+
+        <button onclick="vs()">click me</button>
+        <div id="op"></div>
+
+        <script>
+            function vs(){
+                var op = document.getElementById("op");
+
+                op.innerHTML = window.innerWidth;
+            }
+        </script>
+    </body>
+</html>
